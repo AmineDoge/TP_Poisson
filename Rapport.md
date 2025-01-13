@@ -60,7 +60,7 @@ Le vecteur des seconds membres (« RHS ») est généré par la fonction `set_de
 
 Le maillage 1D est également construit grâce à `set_grid_points_1D`, qui génère un ensemble de points uniformément espacés dans le domaine considéré. Ces points servent de base pour la discrétisation spatiale et permettent de calculer la solution analytique.
 
-> **Graphique à insérer ici :** `grid_points.png`
+
 ![](images/grid_points.png)
 
 
