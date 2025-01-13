@@ -30,6 +30,40 @@ L'environnement de travail est configuré via un conteneur Docker permettant l'u
 
 Les fonctions BLAS comme `DCOPY` ont été testées avec succès, confirmant la présence d'un environnement fonctionnel.
 
+
+## Instructions de Compilation et d’Exécution
+
+Pour compiler et exécuter les programmes, suivez les étapes suivantes :
+
+1. Construisez l’image Docker :
+   ```bash
+   docker build -t poisson1d .
+   ```
+
+2. Lancez un conteneur Docker interactif :
+   ```bash
+   docker run --rm -it poisson1d bash
+   ```
+
+3. Accédez au répertoire des exécutables :
+   ```bash
+   cd app/bin
+   ```
+
+4. Exécutez les différents programmes :
+   - **Test de l’environnement :**
+     ```bash
+     ./tp_testenv
+     ```
+   - **Méthodes directes :**
+     ```bash
+     ./tpPoisson1D_direct
+     ```
+   - **Méthodes itératives :**
+     ```bash
+     ./tpPoisson1D_iter
+     ```
+
 ---
 
 ## Partie 2 : Méthodes Directes
