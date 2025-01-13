@@ -185,7 +185,6 @@ Avant d’exécuter les méthodes de résolution, l’environnement de calcul a 
    - `X_grid.dat` : Contient les coordonnées des points du maillage.
    - `LU.dat` : Contient les matrices \(L\) et \(U\) après factorisation.
 
-Ces annexes permettent de clarifier les rôles des différentes fonctions et fichiers dans le cadre de ce TP.
 
 ---
 
