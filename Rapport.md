@@ -53,7 +53,7 @@ Les fonctions BLAS comme `DCOPY` ont été testées avec succès, confirmant la 
 
 La matrice associée au problème est tridiagonale et représentée dans un format « General Band » (GB) pour optimiser la mémoire et les calculs. Cette matrice est construite à l’aide de la fonction `set_GB_operator_colMajor_poisson1D`. Elle organise les éléments diagonaux et hors-diagonaux dans un tableau compact pour éviter de stocker les zéros inutiles.
 
-![Structure de la matrice AB](images/matrix_AB.png)
+
 
 
 Le vecteur des seconds membres (« RHS ») est généré par la fonction `set_dense_RHS_DBC_1D`. Ce vecteur incorpore les conditions aux limites du problème : les températures imposées \(T_0\) et \(T_1\) sont intégrées dans les premières et dernières entrées respectivement, tandis que les autres valeurs sont initialisées à zéro.
@@ -80,7 +80,6 @@ Détails supplémentaires sur le stockage bande : Le stockage GB réduit signif
 
 - **Validations :** Les fichiers générés, tels que `LU.dat`, confirment que la factorisation LU est correcte. Les matrices \(L\) et \(U\) respectent la structure tridiagonale initiale.
 
-![Structure de la matrice LU](images/matrix_LU.png)
 
 
 - **Performances :** Les temps d’exécution pour `dgbtrf` et `dgbtrs` ont été mesurés. La factorisation présente une complexité temporelle en \(O(n^3)\), tandis que la résolution est plus rapide, en \(O(n^2)\).
